@@ -17,14 +17,4 @@ services:
       - /lzcapp/var/config:/etc/netdata
       - /lzcapp/var/data:/var/lib/netdata
       - /lzcapp/var/cache:/var/cache/netdata
-      - /:/host/root:ro,rslave
-      - /etc/passwd:/host/etc/passwd:ro
-      - /etc/group:/host/etc/group:ro
-      - /etc/localtime:/etc/localtime:ro
-      - /etc/hosts:/host/etc/hosts:ro
-      - /proc:/host/proc:ro
-      - /sys:/host/sys:ro
-      - /etc/os-release:/host/etc/os-release:ro
-      - /var/log:/host/var/log:ro
-      - /var/run/docker.sock:/var/run/docker.sock:ro
     environment:
