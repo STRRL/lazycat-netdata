@@ -12,7 +12,8 @@ application:
       service: netdata
 services:
   netdata: 
-    image: netdata/netdata:v2.1.0
+    # origin image: netdata/netdata:v2.1.0
+    image: registry.lazycat.cloud/u11408144/netdata/netdata:0b69f8fd3ee27c8f
     binds:
       - /lzcapp/var/config:/etc/netdata
       - /lzcapp/var/data:/var/lib/netdata
